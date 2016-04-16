@@ -37,6 +37,8 @@ public class UIManager : MonoBehaviour {
 	public Image chargeBar;
 	public Image supicionBar;
 
+	public Text targetName, targetWearables, targetsLeft;
+
 	public Text disguiseText;
 	public GameObject disguisesList;
 	public GameObject disguiseTemplate;
@@ -108,6 +110,14 @@ public class UIManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate () {
+		targetName.text = player.target.infos.name;
+
+		string[] stuffs = (from name in player.target.infos.extras
+						  where true
+						  select name.name).ToArray();
+
+		targetWearables.text = stuffs.Aggregate((current, next) => current + "\n" + next);
+
 		disguiseText.text = playerDisguise.isActive ? "Current Disguise:" + playerDisguise.disguise.GetComponent<DisguiseInfo>().name : "Not Disguised";
 
 		SetFocus(activeDisguise);

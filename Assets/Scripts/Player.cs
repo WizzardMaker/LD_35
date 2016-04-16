@@ -22,17 +22,16 @@ public class Player : MonoBehaviour {
 	public float speed, sprintSpeed;
 	public float jumpHeight;
 
-	public List<Unit> targets;
+	public Unit target;
 
 	// Use this for initialization
 	void Start () {
 		cc = GetComponent<CharacterController>();
 		disguise = GetComponent<Disguise>();
 
-		for(int i = 0; i < FindObjectsOfType<Unit>().Length; i++) {
-			if (Random.Range(0, 100) < 10)
-				targets.Add(FindObjectsOfType<Unit>()[i]);
-		}
+
+		target = FindObjectsOfType<Unit>()[Random.Range(0,FindObjectsOfType<Unit>().Length)];
+		target.MakeTarget();
 	}
 
 	bool isJumping = false;

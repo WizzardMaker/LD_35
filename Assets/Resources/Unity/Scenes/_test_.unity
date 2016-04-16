@@ -3115,6 +3115,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &127648253
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3147,7 +3155,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -4525,6 +4533,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &176856111
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4557,7 +4573,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -5137,6 +5153,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &195454363
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5169,7 +5193,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -5216,7 +5240,7 @@ Transform:
   m_Children:
   - {fileID: 220600220}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &198281131
 Prefab:
@@ -5231,7 +5255,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.055
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5454,6 +5478,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &214062968
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5486,7 +5518,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -6211,6 +6243,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &225530354
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6243,7 +6283,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -6498,6 +6538,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &234413269
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6530,7 +6578,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -7874,6 +7922,8 @@ RectTransform:
   - {fileID: 1754173273}
   - {fileID: 331194977}
   - {fileID: 689631475}
+  - {fileID: 680849954}
+  - {fileID: 1755857927}
   m_Father: {fileID: 1114616499}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8380,6 +8430,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &299676321
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8412,7 +8470,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -8649,7 +8707,7 @@ GameObject:
   - 222: {fileID: 331194979}
   - 114: {fileID: 331194978}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8685,7 +8743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.35294116, g: 0.35294116, b: 0.35294116, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9017,7 +9075,7 @@ MonoBehaviour:
   speed: 3.5
   sprintSpeed: 2
   jumpHeight: 5
-  targets: []
+  target: {fileID: 0}
 --- !u!143 &358909252
 CharacterController:
   m_ObjectHideFlags: 0
@@ -9710,6 +9768,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &367426652
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9742,7 +9808,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -10595,6 +10661,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &395019957
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10627,7 +10701,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -11049,6 +11123,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &412464797
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11081,7 +11163,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -11128,7 +11210,7 @@ Transform:
   m_Children:
   - {fileID: 1970171140}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413167176 stripped
 GameObject:
@@ -11208,6 +11290,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &414167495
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11240,7 +11330,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -11589,6 +11679,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &419040516
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11621,7 +11719,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -12230,6 +12328,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &439399829
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12262,7 +12368,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -12811,6 +12917,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &470110422
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12843,7 +12957,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -12890,7 +13004,7 @@ Transform:
   m_Children:
   - {fileID: 1491328078}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &474877107
 Prefab:
@@ -13750,6 +13864,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &535681948
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13782,7 +13904,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -13869,6 +13991,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &537176529
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13901,7 +14031,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -13949,7 +14079,7 @@ Transform:
   - {fileID: 163616534}
   - {fileID: 24030326}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &537336039
 Prefab:
@@ -14210,6 +14340,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &540572120
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14242,7 +14380,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -15294,6 +15432,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &579957674
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15326,7 +15472,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -15518,6 +15664,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &584155781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15550,7 +15704,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -15917,6 +16071,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &596846357
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15949,7 +16111,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -16351,6 +16513,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &619420094
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16383,7 +16553,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -16724,6 +16894,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &632632940
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16756,7 +16934,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -17142,6 +17320,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &641838222
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17174,7 +17360,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -17451,6 +17637,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &659458155
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17483,7 +17677,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -17647,6 +17841,82 @@ MonoBehaviour:
   colliderRadius: 1
   colliderHeight: 3
   colliderCenter: {x: 0, y: 1.5, z: 0}
+--- !u!1 &680849953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 680849954}
+  - 222: {fileID: 680849956}
+  - 114: {fileID: 680849955}
+  m_Layer: 5
+  m_Name: Wearables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &680849954
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680849953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 277668314}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 136.5, y: -176.15}
+  m_SizeDelta: {x: 263.4, y: 133.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &680849955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680849953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.35294116, g: 0.35294116, b: 0.35294116, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Tophat
+
+    Black jacket'
+--- !u!222 &680849956
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680849953}
 --- !u!1 &689631474
 GameObject:
   m_ObjectHideFlags: 0
@@ -17658,7 +17928,7 @@ GameObject:
   - 222: {fileID: 689631477}
   - 114: {fileID: 689631476}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17679,8 +17949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 137.6, y: -145.15}
-  m_SizeDelta: {x: 263.4, y: 195.7}
+  m_AnchoredPosition: {x: 137.6, y: -59.7}
+  m_SizeDelta: {x: 263.4, y: 24.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689631476
 MonoBehaviour:
@@ -17694,7 +17964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.35294116, g: 0.35294116, b: 0.35294116, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17716,12 +17986,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Hilli van Nilli
 
-
-    Wears:
-
-    Tophat
-
-    Black jacket'
+'
 --- !u!222 &689631477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18034,6 +18299,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &718342781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18066,7 +18339,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -18167,6 +18440,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &720743737
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18199,7 +18480,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -19207,6 +19488,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &762340443
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19239,7 +19528,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -21181,6 +21470,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &860567715
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21213,7 +21510,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -21545,6 +21842,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &877913914
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21577,7 +21882,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -21624,7 +21929,7 @@ Transform:
   m_Children:
   - {fileID: 1922323532}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &878025009
 Prefab:
@@ -22867,6 +23172,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &945431970
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22899,7 +23212,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -22946,7 +23259,7 @@ Transform:
   m_Children:
   - {fileID: 1043479979}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &946575172
 Prefab:
@@ -23077,6 +23390,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &947988473
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23109,7 +23430,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -24118,6 +24439,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &980141207
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24150,7 +24479,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -26064,6 +26393,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1091508322
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26096,7 +26433,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -26143,7 +26480,7 @@ Transform:
   m_Children:
   - {fileID: 1661755043}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1091759489
 Prefab:
@@ -26377,6 +26714,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1100876120
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26409,7 +26754,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -26681,6 +27026,9 @@ MonoBehaviour:
   unableColor: {r: 1, g: 0, b: 0, a: 0.497}
   chargeBar: {fileID: 922261293}
   supicionBar: {fileID: 2100641989}
+  targetName: {fileID: 689631476}
+  targetWearables: {fileID: 680849955}
+  targetsLeft: {fileID: 331194978}
   disguiseText: {fileID: 1587217306}
   disguisesList: {fileID: 1519807326}
   disguiseTemplate: {fileID: 1121216204}
@@ -27866,6 +28214,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1155151730
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27898,7 +28254,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -27945,7 +28301,7 @@ Transform:
   m_Children:
   - {fileID: 1248128581}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160145041 stripped
 GameObject:
@@ -28949,6 +29305,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1218343396
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -28981,7 +29345,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -30373,6 +30737,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1311245208
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -30405,7 +30777,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -31666,6 +32038,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1370089847
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31698,7 +32078,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -31974,6 +32354,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1383303526
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32006,7 +32394,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -32119,6 +32507,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1385906669
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32151,7 +32547,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -32389,6 +32785,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1423602106
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32421,7 +32825,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -32468,7 +32872,7 @@ Transform:
   m_Children:
   - {fileID: 48665665}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1424906400 stripped
 GameObject:
@@ -34197,6 +34601,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1508610252
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34229,7 +34641,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -34406,6 +34818,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1155151734}
   - {fileID: 537176533}
   - {fileID: 1751486312}
   - {fileID: 1752643355}
@@ -34422,7 +34835,6 @@ Transform:
   - {fileID: 945431974}
   - {fileID: 412464801}
   - {fileID: 1757718439}
-  - {fileID: 1155151734}
   - {fileID: 718342785}
   - {fileID: 535681952}
   - {fileID: 1921008495}
@@ -36643,6 +37055,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1620318441
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36675,7 +37095,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -37178,6 +37598,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1656369450
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37210,7 +37638,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -38700,6 +39128,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1689801916
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38732,7 +39168,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -38779,7 +39215,7 @@ Transform:
   m_Children:
   - {fileID: 1263069931}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699637551 stripped
 GameObject:
@@ -39555,6 +39991,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1724749678
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39587,7 +40031,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40214,6 +40658,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1751486308
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40246,7 +40698,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40293,7 +40745,7 @@ Transform:
   m_Children:
   - {fileID: 414234001}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751523193
 GameObject:
@@ -40333,6 +40785,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1751523195
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40365,7 +40825,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40412,7 +40872,7 @@ Transform:
   m_Children:
   - {fileID: 1685436198}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752643349
 GameObject:
@@ -40452,6 +40912,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1752643351
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40484,7 +40952,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40531,7 +40999,7 @@ Transform:
   m_Children:
   - {fileID: 940638301}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754173272
 GameObject:
@@ -40544,7 +41012,7 @@ GameObject:
   - 222: {fileID: 1754173275}
   - 114: {fileID: 1754173274}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40580,7 +41048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.35294116, g: 0.35294116, b: 0.35294116, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -40607,6 +41075,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754173272}
+--- !u!1 &1755857926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1755857927}
+  - 222: {fileID: 1755857929}
+  - 114: {fileID: 1755857928}
+  m_Layer: 5
+  m_Name: Tag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1755857927
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755857926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 277668314}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 137.59998, y: -96.899994}
+  m_SizeDelta: {x: 263.4, y: 24.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1755857928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755857926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.35294116, g: 0.35294116, b: 0.35294116, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Wears:'
+--- !u!222 &1755857929
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755857926}
 --- !u!1 &1757718433
 GameObject:
   m_ObjectHideFlags: 0
@@ -40645,6 +41187,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1757718435
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40677,7 +41227,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40724,7 +41274,7 @@ Transform:
   m_Children:
   - {fileID: 224489969}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761191783
 GameObject:
@@ -41786,6 +42336,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1782490750
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41818,7 +42376,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -41957,6 +42515,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1796463918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41989,7 +42555,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -42420,6 +42986,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1816264199
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -42452,7 +43026,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -43465,6 +44039,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1860011163
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -43497,7 +44079,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -44546,6 +45128,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1913400764
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44578,7 +45168,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -44855,6 +45445,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1921008491
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44887,7 +45485,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -45589,6 +46187,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1945814201
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -45621,7 +46227,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -45668,7 +46274,7 @@ Transform:
   m_Children:
   - {fileID: 1323147165}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1950624056
 Prefab:
@@ -46027,6 +46633,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1963388030
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46059,7 +46673,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -46317,6 +46931,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &1975823378
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46349,7 +46971,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -46396,7 +47018,7 @@ Transform:
   m_Children:
   - {fileID: 1136026237}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1977140214
 Prefab:
@@ -47108,6 +47730,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &2015642339
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47140,7 +47770,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -47806,6 +48436,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &2058277740
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47838,7 +48476,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -47885,7 +48523,7 @@ Transform:
   m_Children:
   - {fileID: 1539417463}
   m_Father: {fileID: 1517313282}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2058643075
 GameObject:
@@ -48517,6 +49155,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &2101787991
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48549,7 +49195,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -49340,6 +49986,14 @@ MonoBehaviour:
   - {x: 97, y: 1, z: 10}
   - {x: 119, y: 1, z: -6}
   speed: 3
+  extras:
+  - name: Hat
+    obj: {fileID: 100000, guid: ebda699e1f89d7c40bafcf11c7d30180, type: 3}
+    offset: {x: 0, y: 1.055, z: 0}
+  - name: NotHat
+    obj: {fileID: 100000, guid: a53db678e97becb47b59d2ff0ac0b1e8, type: 3}
+    offset: {x: 0, y: 0, z: 0}
+  isSpecial: 0
 --- !u!195 &2137376495
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49372,7 +50026,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7ecd62806364cfc479d02e4911110198, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
