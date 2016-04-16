@@ -16,6 +16,9 @@ public class UIManager : MonoBehaviour {
 			return _activeDisguise;
 		}
 		set {
+			if (isFixed)
+				return;
+
 			if (value > 9)
 				value = 0;
 			if (value < 0)
@@ -25,8 +28,10 @@ public class UIManager : MonoBehaviour {
 		}
 	}
 
+	public bool isFixed;
 
-
+	public Color normalColor;
+	public Color unableColor;
 	GameObject oldActive;
 
 	public Image ChargeBar;
@@ -35,7 +40,7 @@ public class UIManager : MonoBehaviour {
 	public GameObject disguisesList;
 	public GameObject disguiseTemplate;
 
-	GameObject[] GetChildren(GameObject parent) {
+	public GameObject[] GetChildren(GameObject parent) {
 		List<GameObject> temp = new List<GameObject>();
 
 		for (int i = 0; i < parent.transform.childCount; i++)
@@ -58,16 +63,21 @@ public class UIManager : MonoBehaviour {
 		activeDisguise = 1;
 	}
 
-	void SetFocus(int id) {
-		GameObject go = disguisesList.transform.GetChild(id).gameObject;
-
-		Image[] ima = (from im in go.GetComponentsInChildren<Image>(true)
+	public Image GetHighlighter(GameObject parent) {
+		Image[] ima = (from im in parent.GetComponentsInChildren<Image>(true)
 					   where im.tag == "Highlight"
 					   select im).ToArray();
 
-		if (oldActive != null) oldActive.SetActive(false);
-		ima[0].gameObject.SetActive(true);
-		oldActive = ima[0].gameObject;
+		return ima[0];
+	}
+
+	void SetFocus(int id) {
+		GameObject go = disguisesList.transform.GetChild(id).gameObject;
+
+		Image ima = GetHighlighter(go);
+        if (oldActive != null) oldActive.SetActive(false);
+		ima.gameObject.SetActive(true);
+		oldActive = ima.gameObject;
 	}
 
 	public void UpdateDisguises(GameObject[] dis) {
@@ -85,7 +95,7 @@ public class UIManager : MonoBehaviour {
 			if (go == null)
 				text.text = it + ".";
 			else
-				text.text = it + ". " + go.name;
+				text.text = it + ". " + go.GetComponent<DisguiseInfo>().name;
 
 			temp.SetActive(true);
 
@@ -97,7 +107,7 @@ public class UIManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate () {
-		disguiseText.text = playerDisguise.isActive ? "Current Disguise:" + playerDisguise.disguise.name : "Not Disguised";
+		disguiseText.text = playerDisguise.isActive ? "Current Disguise:" + playerDisguise.disguise.GetComponent<DisguiseInfo>().name : "Not Disguised";
 
 		SetFocus(activeDisguise);
 
@@ -106,5 +116,11 @@ public class UIManager : MonoBehaviour {
 			activeDisguise = Input.GetKey((i).ToString()) ? i-1 : activeDisguise;
 
 		ChargeBar.fillAmount = playerDisguise.progress / playerDisguise.neededProgress;
+
+		if (!playerDisguise.canHide) {
+			GetHighlighter(oldActive).color = unableColor;
+		} else {
+			GetHighlighter(oldActive).color = normalColor;
+		}
 	}
 }

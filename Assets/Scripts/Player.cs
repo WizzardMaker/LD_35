@@ -5,7 +5,8 @@ using System.Collections.Generic;
 [RequireComponent(typeof(CharacterController))]
 public class Player : MonoBehaviour {
 
-	CharacterController cc;
+	[HideInInspector]
+	public CharacterController cc;
 
 	public GameObject[] disguises = new GameObject[10];
 
@@ -78,6 +79,6 @@ public class Player : MonoBehaviour {
 				AddDisguise(temp,UIManager.active.activeDisguise);
             }
 		}
-
+		disguise.SetDisguise( disguises[UIManager.active.activeDisguise]);
 	}
 }

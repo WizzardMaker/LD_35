@@ -13,7 +13,10 @@ public class Disguise : MonoBehaviour {
 
 	MeshFilter mf;
 
-	public GameObject disguise;
+	public GameObject disguise {
+		get;
+		private set;
+	}
 
 	Mesh disguiseMesh;
 	Mesh baseMesh;
@@ -24,23 +27,68 @@ public class Disguise : MonoBehaviour {
 
 		Debug.Log("GetDisguise!");
 		if (Physics.Raycast(ray, out hit)) {
-			return hit.transform.gameObject;
+			if (hit.transform.gameObject.GetComponent<DisguiseInfo>())
+				return hit.transform.gameObject;
 		}
 		
 
         return null;
 	}
 
-	public void SetDisguise(GameObject disguise, bool hide = false) {
-		if (disguise == null)
-			throw (new System.ArgumentNullException("disguise is NULL, fix that!"));
+	public bool canHide;
 
+	public void SetDisguise(GameObject disguise, out bool canHide) {
+		canHide = true;
+
+		if (disguise == null) {
+			canHide = false;
+			this.canHide = canHide;
+			return;
+		}
+
+		this.canHide = canHide;
+		ApplyObject(disguise);
+	}
+
+	DisguiseInfo di;
+
+
+	float baseRadius = 0.5f, baseHeight = 1f;
+	Vector3 baseCenter = Vector3.zero;
+
+    void SetCCCollider() {
+		if (isActive) {
+			owner.cc.radius = di.colliderRadius;
+			owner.cc.height = di.colliderHeight;
+			owner.cc.center = di.colliderCenter;
+		} else {
+			owner.cc.radius = baseRadius;
+			owner.cc.height = baseHeight;
+			owner.cc.center = baseCenter;
+		}
+	}
+
+	void ApplyObject(GameObject disguise) {
 		this.disguise = disguise;
 		disguiseMesh = disguise.GetComponent<MeshFilter>().mesh;
 
+		di = disguise.GetComponent<DisguiseInfo>();
+
+		neededProgress = di.disguiseTime;
+		
+
 		GetComponent<MeshCollider>().sharedMesh = disguiseMesh;
 
-		isActive = hide;
+
+	}
+	public void SetDisguise(GameObject disguise) {
+		if (disguise == null) {
+			canHide = false;
+			return;
+		}
+
+		canHide = true;
+		ApplyObject(disguise);
 	}
 
 	// Use this for initialization
@@ -48,6 +96,8 @@ public class Disguise : MonoBehaviour {
 		mf = GetComponent<MeshFilter>();
 		owner = GetComponent<Player>();
 		baseMesh = mf.mesh;
+
+
 
 		if (disguise != null)
 			SetDisguise(disguise);
@@ -59,6 +109,7 @@ public class Disguise : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		SetCCCollider();
 		if (isActive) {
 			if (disguiseMesh == null)
 				throw (new System.NullReferenceException("disguiseMesh is null, what the hell?!"));
@@ -71,9 +122,10 @@ public class Disguise : MonoBehaviour {
 			GetComponent<MeshCollider>().sharedMesh = baseMesh;
 		}
 
-		if(Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) {
+		if((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && canHide) {
 			isDisguising = true;
 			owner.canMove = false;
+			UIManager.active.isFixed = true;
 
 			progress += Time.deltaTime;
 
@@ -91,6 +143,7 @@ public class Disguise : MonoBehaviour {
 				isDisguising = false;
 				progress = 0;
 				owner.canMove = true;
+				UIManager.active.isFixed = false;
 			}
 		}
 	}
