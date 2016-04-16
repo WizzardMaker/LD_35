@@ -25,7 +25,13 @@ public class Disguise : MonoBehaviour {
 	public bool isActive;
 	public float coolDown;
 
+	new GameObject renderer;
+
 	MeshFilter mf;
+	MeshRenderer mr;
+	MeshRenderer disguiseRenderer;
+	Quaternion rotation;
+	Vector3 scale;
 
 	public GameObject disguise {
 		get;
@@ -33,7 +39,6 @@ public class Disguise : MonoBehaviour {
 	}
 
 	Mesh disguiseMesh;
-	Mesh baseMesh;
 
 	public static GameObject GetDisguise(Ray ray) {
 		RaycastHit hit;
@@ -88,6 +93,11 @@ public class Disguise : MonoBehaviour {
 
 		di = disguise.GetComponent<DisguiseInfo>();
 
+		rotation = disguise.transform.rotation;
+		scale = disguise.transform.lossyScale;
+
+		disguiseRenderer = disguise.GetComponent<MeshRenderer>();
+
 		neededProgress = di.disguiseTime;
 
 		type = di.type;
@@ -109,11 +119,12 @@ public class Disguise : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mf = GetComponent<MeshFilter>();
+		mf = GetComponentsInChildren<MeshFilter>()[1];
+		mr = GetComponentsInChildren<MeshRenderer>()[1];
+
 		owner = GetComponent<Player>();
-		baseMesh = mf.mesh;
 
-
+		renderer = transform.GetChild(0).gameObject;
 
 		if (disguise != null)
 			SetDisguise(disguise);
@@ -130,12 +141,18 @@ public class Disguise : MonoBehaviour {
 			if (disguiseMesh == null)
 				throw (new System.NullReferenceException("disguiseMesh is null, what the hell?!"));
 
-			mf.mesh = disguiseMesh;
-			GetComponent<MeshCollider>().sharedMesh = disguiseMesh;
+			renderer.transform.localScale = scale;
+			renderer.transform.rotation = rotation;
+
+			mr.materials = disguiseRenderer.materials;
+			owner.GetComponent<MeshRenderer>().enabled = false;
+            mf.mesh = disguiseMesh;
+			mr.enabled = true;
+			//GetComponentsInChildren<MeshCollider>()[1].sharedMesh = disguiseMesh;
 
 		} else {
-			mf.mesh = baseMesh;
-			GetComponent<MeshCollider>().sharedMesh = baseMesh;
+			mr.enabled = false;
+			owner.GetComponent<MeshRenderer>().enabled = true;
 		}
 
 		if((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && canHide) {

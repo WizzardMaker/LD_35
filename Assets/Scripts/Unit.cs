@@ -19,8 +19,8 @@ public class Unit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!navA.hasPath || Vector3.Distance(transform.position,navA.pathEndPosition) < 2)
-			navA.SetDestination(poi[Random.Range(0,poi.Length)]);
+		if (Vector3.Distance(transform.position,navA.pathEndPosition) < 2)
+			navA.destination = (poi[0]);
 		
 	}
 }
