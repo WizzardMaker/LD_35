@@ -52,7 +52,11 @@ public class Disguise : MonoBehaviour {
 		if (disguise != null)
 			SetDisguise(disguise);
 	}
-	
+
+	bool isDisguising;
+	public float progress;
+	public float neededProgress;
+
 	// Update is called once per frame
 	void Update () {
 		if (isActive) {
@@ -65,7 +69,29 @@ public class Disguise : MonoBehaviour {
 		} else {
 			mf.mesh = baseMesh;
 			GetComponent<MeshCollider>().sharedMesh = baseMesh;
-			
+		}
+
+		if(Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) {
+			isDisguising = true;
+			owner.canMove = false;
+
+			progress += Time.deltaTime;
+
+			if(progress >= neededProgress) {
+				progress = neededProgress;
+				isActive = true;
+			}
+
+		}else if (isDisguising) {
+			if (isActive) {
+				progress -= Time.deltaTime;
+				if (progress <= 0)
+					isActive = false;
+			} else {
+				isDisguising = false;
+				progress = 0;
+				owner.canMove = true;
+			}
 		}
 	}
 }

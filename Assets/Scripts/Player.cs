@@ -7,10 +7,12 @@ public class Player : MonoBehaviour {
 
 	CharacterController cc;
 
-	public List<GameObject> disguises;
+	public GameObject[] disguises = new GameObject[10];
 
 	[HideInInspector]
 	public Disguise disguise;
+
+	public bool canMove;
 
 	public float lookSpeed;
 
@@ -46,23 +48,35 @@ public class Player : MonoBehaviour {
 		if (cc.isGrounded)
 			isJumping = false;
 
+		if (!canMove)
+			vel = Vector3.zero;
+
 		vel += grav;
 
 		cc.Move(vel * Time.deltaTime);
 	}
 
+	void AddDisguise(GameObject go, int i){
+		if (disguises[i] == (go))
+			return;
+
+		disguises[i] = go;
+
+		UIManager.active.UpdateDisguises(disguises);
+	}
+
 	// Update is called once per frame
 	void Update() {
+		
 		Move();
 
 		transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * lookSpeed);
 
-		if (Input.GetButtonDown("Fire1")) {
+		if (Input.GetButtonDown("Fire1") && (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))) {
 			GameObject temp;
             if ((temp = Disguise.GetDisguise(Camera.main.ScreenPointToRay(new Vector3(Camera.main.pixelWidth / 2, Camera.main.pixelHeight / 2)))) != null) {
-				if(!disguises.Contains(temp))
-					disguises.Add(temp);
-			}
+				AddDisguise(temp,UIManager.active.activeDisguise);
+            }
 		}
 
 	}
