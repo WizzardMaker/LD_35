@@ -72,7 +72,9 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		
+		SniperAI.isInView(gameObject);
+
+
 		Move();
 
 		transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * lookSpeed);

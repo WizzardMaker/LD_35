@@ -30,3 +30,10 @@ public class Area : MonoBehaviour {
 		}
 	}
 }
+/*
+	POI:
+	-49 2
+	17 98
+	97 10
+	119 -6
+*/

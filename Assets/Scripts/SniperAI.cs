@@ -30,6 +30,13 @@ public class SniperAI : MonoBehaviour {
 
 	int i = 0;
 
+	public static bool isInView(GameObject target) {
+		Camera cam = GameObject.FindGameObjectWithTag("SniperCam").GetComponent<Camera>();
+		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(cam);
+
+		return GeometryUtility.TestPlanesAABB(planes, target.GetComponent<Collider>().bounds);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		timeAdded += Time.deltaTime;
