@@ -8728,7 +8728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180.5, y: -258}
+  m_AnchoredPosition: {x: 175.9, y: -258}
   m_SizeDelta: {x: 185, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331194978
@@ -8753,7 +8753,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
     m_FontSize: 22
-    m_FontStyle: 1
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -17898,7 +17898,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -17974,7 +17974,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -26919,6 +26919,7 @@ GameObject:
   - 114: {fileID: 1114616501}
   - 114: {fileID: 1114616500}
   - 114: {fileID: 1114616503}
+  - 95: {fileID: 1114616504}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -27032,6 +27033,23 @@ MonoBehaviour:
   disguiseText: {fileID: 1587217306}
   disguisesList: {fileID: 1519807326}
   disguiseTemplate: {fileID: 1121216204}
+--- !u!95 &1114616504
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114616498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d4f23db8bd80074bbad0003e4f87ca6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1115301656 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 1ec7e966ada0d174a8f68f458478a9b6, type: 3}
@@ -41058,7 +41076,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
     m_FontSize: 26
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -41132,7 +41150,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 365a00b985f4785448f23bb70e63e4fb, type: 3}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
