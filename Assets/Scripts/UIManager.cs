@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour {
 
 	public bool isFixed;
 
+	Animator anim;
+
 	public Color normalColor;
 	public Color unableColor;
 	GameObject oldActive;
@@ -64,6 +66,8 @@ public class UIManager : MonoBehaviour {
 		UpdateDisguises(new GameObject[10]);
 
 		activeDisguise = 1;
+
+		anim = GetComponent<Animator>();
 	}
 
 	public Image GetHighlighter(GameObject parent) {
@@ -110,6 +114,10 @@ public class UIManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate () {
+
+		if (Input.GetKeyDown(KeyCode.Tab))
+			anim.SetBool("showList", !anim.GetBool("showList"));
+
 		targetName.text = player.target.infos.name;
 
 		string[] stuffs = (from name in player.target.infos.extras
