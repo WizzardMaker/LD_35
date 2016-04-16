@@ -102,8 +102,7 @@ public class Disguise : MonoBehaviour {
 
 		type = di.type;
 		supicionLevel = di.supicionLevel;
-
-		GetComponent<MeshCollider>().sharedMesh = disguiseMesh;
+		
 
 
 	}

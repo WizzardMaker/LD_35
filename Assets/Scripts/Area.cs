@@ -25,6 +25,7 @@ public class Area : MonoBehaviour {
 				p.supicion += p.disguise.supicionLevel * Time.deltaTime;
 				//Debug.Log("What are you doing?");
 			} else {
+				p.supicion -= p.disguise.supicionLevel * Time.deltaTime;
 				//Debug.Log("Nothing Supicious");
 			}
 		}
