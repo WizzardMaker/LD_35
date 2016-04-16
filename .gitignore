@@ -14,6 +14,12 @@
 *.pidb
 *.booproj
 
+
+#Huge unneeded Files:
+*.pdb
+*.exe
+Temp/
+
 # Unity3D generated meta files
 *.pidb.meta
 
