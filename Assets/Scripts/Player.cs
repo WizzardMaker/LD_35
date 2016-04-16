@@ -16,8 +16,10 @@ public class Player : MonoBehaviour {
 	public bool canMove;
 
 	public float lookSpeed;
+	public float supicion, supicionCoolrate;
+	public float maxSupicion, minSupicion;
 
-	public float speed;
+	public float speed, sprintSpeed;
 	public float jumpHeight;
 
 	// Use this for initialization
@@ -34,12 +36,14 @@ public class Player : MonoBehaviour {
 		Vector3 vel = Vector3.zero;
 		grav += Physics.gravity * Time.deltaTime;
 
+		bool isSprinting = Input.GetKey(KeyCode.LeftShift);
+
 		if (disguise.isActive) {
-			vel += transform.right * Input.GetAxis("Vertical") * speed;
-			vel += -transform.forward * Input.GetAxis("Horizontal") * speed;
+			vel += transform.right * Input.GetAxis("Vertical") * speed * (isSprinting ? sprintSpeed : 1);
+			vel += -transform.forward * Input.GetAxis("Horizontal") * speed * (isSprinting ? sprintSpeed : 1);
 		} else {
-			vel += transform.forward * Input.GetAxis("Vertical") * speed;
-			vel += transform.right * Input.GetAxis("Horizontal") * speed;
+			vel += transform.forward * Input.GetAxis("Vertical") * speed * (isSprinting ? sprintSpeed : 1);
+			vel += transform.right * Input.GetAxis("Horizontal") * speed * (isSprinting ? sprintSpeed : 1);
 		}
 
 		if (!isJumping && Input.GetButtonDown("Jump")) {
@@ -80,5 +84,10 @@ public class Player : MonoBehaviour {
             }
 		}
 		disguise.SetDisguise( disguises[UIManager.active.activeDisguise]);
+
+
+		supicion -= supicionCoolrate * Time.deltaTime;
+		supicion = Mathf.Clamp(supicion, minSupicion, maxSupicion);
+		
 	}
 }

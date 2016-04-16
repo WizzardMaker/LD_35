@@ -1,12 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum DisguiseType {
+	PottedPlant,
+	Plant,
+	Tree,
+	Trash,
+	TrashCan,
+	PicknickCarpet,
+	Grass,
+	Car,
+
+}
+
 [RequireComponent(typeof(Player))]
 public class Disguise : MonoBehaviour {
 
 	Player owner;
 
+	public DisguiseType type;
 
+	public float supicionLevel;
 
 	public bool isActive;
 	public float coolDown;
@@ -75,7 +89,9 @@ public class Disguise : MonoBehaviour {
 		di = disguise.GetComponent<DisguiseInfo>();
 
 		neededProgress = di.disguiseTime;
-		
+
+		type = di.type;
+		supicionLevel = di.supicionLevel;
 
 		GetComponent<MeshCollider>().sharedMesh = disguiseMesh;
 

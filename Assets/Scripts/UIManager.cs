@@ -34,7 +34,8 @@ public class UIManager : MonoBehaviour {
 	public Color unableColor;
 	GameObject oldActive;
 
-	public Image ChargeBar;
+	public Image chargeBar;
+	public Image supicionBar;
 
 	public Text disguiseText;
 	public GameObject disguisesList;
@@ -115,7 +116,8 @@ public class UIManager : MonoBehaviour {
 		for (int i = 0; i < 10; i++)
 			activeDisguise = Input.GetKey((i).ToString()) ? i-1 : activeDisguise;
 
-		ChargeBar.fillAmount = playerDisguise.progress / playerDisguise.neededProgress;
+		chargeBar.fillAmount = playerDisguise.progress / playerDisguise.neededProgress;
+		supicionBar.fillAmount = player.supicion / player.maxSupicion;
 
 		if (!playerDisguise.canHide) {
 			GetHighlighter(oldActive).color = unableColor;
