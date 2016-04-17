@@ -10,10 +10,10 @@ public enum DisguiseType {
 	PicknickCarpet,
 	Grass,
 	Car,
+	StreetLamp,
 
 }
 
-[RequireComponent(typeof(Player))]
 public class Disguise : MonoBehaviour {
 
 	Player owner;
@@ -133,8 +133,12 @@ public class Disguise : MonoBehaviour {
 	public float progress;
 	public float neededProgress;
 
+
 	// Update is called once per frame
 	void Update () {
+		if (UIManager.stopMovement)
+			return;
+
 		SetCCCollider();
 		if (isActive) {
 			if (disguiseMesh == null)

@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using System.Linq;
 using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour {
+
+	public AudioSource music;
 
 	public static UIManager active;
 
@@ -30,7 +34,7 @@ public class UIManager : MonoBehaviour {
 
 	public bool isFixed;
 
-	Animator anim;
+	public static Animator anim;
 
 	public Color normalColor;
 	public Color unableColor;
@@ -45,6 +49,8 @@ public class UIManager : MonoBehaviour {
 	public GameObject disguisesList;
 	public GameObject disguiseTemplate;
 
+	public float time;
+
 	public GameObject[] GetChildren(GameObject parent) {
 		List<GameObject> temp = new List<GameObject>();
 
@@ -58,6 +64,8 @@ public class UIManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		time = 0;
+
 		active = this;
 
 		player = FindObjectOfType<Player>();
@@ -112,8 +120,72 @@ public class UIManager : MonoBehaviour {
 		
 	}
 
+	public void GoToMainMenu() {
+		SceneManager.LoadScene(0);
+	}
+	public void Restart() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+	public void Exit() {
+		Application.Quit();
+	}
+
+	public Canvas victoryC, gameOverC, pauseC;
+	public Text supicionPoints, timePoints, timeNeeded, points;
+
+	public bool gameOver = false, victory = false;
+	public bool pause {
+		get;
+		set;
+	}
+	public static bool stopMovement;
+
 	// Update is called once per frame
 	void LateUpdate () {
+		if (stopMovement) {
+			Cursor.lockState = CursorLockMode.None;
+		}
+
+		if (gameOver || victory) {
+			pauseC.gameObject.SetActive(false);
+			stopMovement = true;
+			Time.timeScale = 0;
+			music.Stop();
+		}
+		if (Input.GetKeyDown(KeyCode.Escape))
+			pause = !pause;
+
+		if (pause && !(gameOver || victory)) {
+			pauseC.gameObject.SetActive(true);
+			stopMovement = true;
+			Time.timeScale = 0;
+		} else if(!(gameOver || victory)) {
+			pauseC.gameObject.SetActive(false);
+			stopMovement = false;
+			Time.timeScale = 1;
+		}
+
+		if (victory) {
+			victoryC.gameObject.SetActive(true);
+			supicionPoints.text = (player.suspicion <= 31f ? "+100": "-"+ (int)player.suspicion) + " | Supicion of the Sniper";
+			timePoints.text = (300 - (int)time > 0 ? "+" : "-") + (600 - (int)time) + " | Time needed to kill =";
+			timeNeeded.text = (int)time + " seconds";
+			points.text ="Points: " + ((600 - (int)time) - (int)(player.suspicion <= 31f ? -100 : player.suspicion));
+		}
+		if (gameOver) {
+			gameOverC.gameObject.SetActive(true);
+
+		}
+
+
+
+		if (stopMovement)
+			return;
+
+		gameOver = player.suspicion + 1 > player.maxSupicion;
+		victory = player.targetsLeft == 0;
+
+		time += Time.deltaTime;
 
 		if (Input.GetKeyDown(KeyCode.Tab))
 			anim.SetBool("showList", !anim.GetBool("showList"));
@@ -125,6 +197,10 @@ public class UIManager : MonoBehaviour {
 						  select name.name).ToArray();
 
 		targetWearables.text = stuffs.Aggregate((current, next) => current + "\n" + next);
+		if (player.targetsLeft != 1)
+			targetsLeft.text = "People left: " + player.targetsLeft;
+		else
+			targetsLeft.text = "Last Target";
 
 		disguiseText.text = playerDisguise.isActive ? "Current Disguise:" + playerDisguise.disguise.GetComponent<DisguiseInfo>().name : "Not Disguised";
 
@@ -135,7 +211,7 @@ public class UIManager : MonoBehaviour {
 			activeDisguise = Input.GetKey((i).ToString()) ? i-1 : activeDisguise;
 
 		chargeBar.fillAmount = playerDisguise.progress / playerDisguise.neededProgress;
-		supicionBar.fillAmount = player.supicion / player.maxSupicion;
+		supicionBar.fillAmount = player.suspicion / player.maxSupicion;
 
 		if (!playerDisguise.canHide) {
 			GetHighlighter(oldActive).color = unableColor;

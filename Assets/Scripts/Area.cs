@@ -5,6 +5,7 @@ public class Area : MonoBehaviour {
 
 	public List<DisguiseType> unsuspiciousTypes;
 
+	public int layer;
 
 	// Use this for initialization
 	void Start() {
@@ -21,11 +22,25 @@ public class Area : MonoBehaviour {
 		if (other.transform.tag == "Player") {
 			Player p = other.gameObject.GetComponent<Player>();
 
-			if (!unsuspiciousTypes.Contains(p.disguise.type) && p.disguise.isActive) {
-				p.supicion += p.disguise.supicionLevel * Time.deltaTime;
+            if (!unsuspiciousTypes.Contains(p.disguise.type) && p.disguise.isActive) {
+				p.AddSupicion(p.disguise.supicionLevel * Time.deltaTime, layer);
 				//Debug.Log("What are you doing?");
-			} else {
-				p.supicion -= p.disguise.supicionLevel * Time.deltaTime;
+			} else if(p.disguise.isActive) {
+				p.AddSupicion(-p.disguise.supicionLevel * Time.deltaTime, layer);
+				//Debug.Log("Nothing Supicious");
+			}
+		}
+		if (other.transform.parent == null)
+			return;
+
+		if (other.transform.parent.tag == "Player") {
+			Player p = other.transform.parent.gameObject.GetComponent<Player>();
+
+			if (!unsuspiciousTypes.Contains(p.disguise.type) && p.disguise.isActive) {
+				p.AddSupicion(p.disguise.supicionLevel * Time.deltaTime, layer);
+				//Debug.Log("What are you doing?");
+			} else if (p.disguise.isActive) {
+				p.AddSupicion(-p.disguise.supicionLevel * Time.deltaTime, layer);
 				//Debug.Log("Nothing Supicious");
 			}
 		}

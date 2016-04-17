@@ -39,10 +39,18 @@ public class SniperAI : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (UIManager.stopMovement)
+			return;
+
 		timeAdded += Time.deltaTime;
 
 		if(timeAdded > time) {
 			time = scanTarget + Time.time;
+			while (suspects[i] == null) {
+				suspects.Remove(suspects[i]);
+				suspects.Add(FindObjectsOfType<Unit>()[Random.Range(0, FindObjectsOfType<Unit>().Length)].gameObject);
+			}
+
 			if (suspects[i].GetComponent<Player>() != null) {
 				if (suspects[i].GetComponent<Disguise>().isActive)
 					i++;
@@ -53,12 +61,23 @@ public class SniperAI : MonoBehaviour {
 		if (i > suspects.Count - 1)
 			i = 0;
 
+		while (suspects[i] == null) {
+			suspects.Remove(suspects[i]);
+			suspects.Add(FindObjectsOfType<Unit>()[Random.Range(0, FindObjectsOfType<Unit>().Length)].gameObject);
+		}
+
+
 		if (suspects[i].GetComponent<Player>() != null) {
 			if (suspects[i].GetComponent<Disguise>().isActive)
 				i++;
 		}
 		if (i > suspects.Count - 1)
 			i = 0;
+
+		while (suspects[i] == null) {
+			suspects.Remove(suspects[i]);
+			suspects.Add(FindObjectsOfType<Unit>()[Random.Range(0, FindObjectsOfType<Unit>().Length)].gameObject);
+		}
 
 		target = suspects[i].transform.position;
 

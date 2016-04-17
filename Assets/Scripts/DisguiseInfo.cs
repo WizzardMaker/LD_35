@@ -12,15 +12,4 @@ public class DisguiseInfo : MonoBehaviour {
 
 	public float colliderRadius,colliderHeight;
 	public Vector3 colliderCenter;
-
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

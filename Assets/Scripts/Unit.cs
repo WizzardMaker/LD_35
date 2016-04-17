@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections.Generic;
 
 public class Unit : MonoBehaviour {
 	public Vector3[] poi;
 
 	public float speed;
+
+	public GameObject aura;
 
 	NavMeshAgent navA;
 	int goal;
@@ -15,6 +18,9 @@ public class Unit : MonoBehaviour {
 		public GameObject obj;
 
 		public Vector3 offset;
+		public Vector3 scale;
+
+		public string[] forbidden;
 	}
 
 	public class SpecialInfos {
@@ -4987,23 +4993,32 @@ Zuzana";
 
 	public void MakeTarget() {
 		int i = 0;
-		Extra[] extra;
+
+		Extra[] extra = null;
 
 		{
 			int added = 0;
 			List<Extra> temp = new List<Extra>();
 			foreach (Extra ex in extras) {
-				if (i >= 2)
-					return;
-				Debug.Log(ex);
-
+				if (added >= 2)
+					break;
+				//Debug.Log(ex);
+				i++;
 				if (Random.Range(0, 100) < 35 || (added == 0 && extras.Length - i == 1)) {
-					Debug.Log("Selected");
+					//Debug.Log("Selected");
+					bool doStop = false;
+					foreach(Extra e in temp) {
+						if (e.forbidden.Contains(ex.name))
+							doStop = true;
+					}
+					if (doStop)
+						continue;
+
 					temp.Add(ex);
 
 					added++;
 				}
-				i++;
+				
 			}
 			extra = temp.ToArray();
 		}
@@ -5017,15 +5032,23 @@ Zuzana";
 		infos = new SpecialInfos(extra);
 		isSpecial = true;
 
+		GameObject aur = Instantiate(aura);
+		aur.transform.SetParent(transform, false);
+		aur.transform.localPosition = Vector3.zero;
+
 		foreach(Extra ex in extra) {
 			GameObject temp = Instantiate(ex.obj);
 			temp.transform.SetParent(transform, false);
 			temp.transform.localPosition = ex.offset;
+			temp.transform.localScale = ex.scale;
 		}
 	}
 
 	// Use this for initialization
 	void Start () {
+		poi = (from po in FindObjectsOfType<POI>()
+			   select po.transform.position).ToArray();
+
 		navA = GetComponent<NavMeshAgent>();
 		navA.speed = speed;
 		goal = Random.Range(0, poi.Length);
@@ -5035,11 +5058,32 @@ Zuzana";
 	
 	// Update is called once per frame
 	void Update () {
+		if (UIManager.stopMovement)
+			GetComponent<AudioSource>().Pause();
+		else
+			GetComponent<AudioSource>().UnPause();
 
 		if (Vector3.Distance(transform.position, poi[goal]) < 2) {
 			goal = Random.Range(0, poi.Length);
 			navA.SetDestination(poi[goal]);
 		}
 		
+	}
+
+
+	public void Kill(Player killer) {
+		if (SniperAI.isInView(killer.gameObject)) {
+			Debug.Log("Gotcha!");
+
+			killer.minSupicion += 25;
+		} else {
+			killer.minSupicion += 5;
+
+		}
+
+
+
+
+		Destroy(gameObject);
 	}
 }

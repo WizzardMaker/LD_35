@@ -16,6 +16,9 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+		if (UIManager.stopMovement)
+			return;
+
 		if (lookRotation)
 			transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, target.transform.rotation.eulerAngles.y + (target.disguise.isActive ? 90:0) , target.transform.rotation.eulerAngles.z);
 		else
